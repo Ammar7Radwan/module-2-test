@@ -1,0 +1,106 @@
+header h1 {
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+    font-size: 25px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box1{
+    width: 165px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: aqua;
+    text-align: center;
+    line-height: 30px;
+    float: right;
+}
+.box2{
+    width: 165px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: greenyellow;
+    text-align: center;
+    line-height: 30px;
+    float: right;
+}
+.box3{
+    width: 165px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: orange;
+    text-align: center;
+    line-height: 30px;
+    float: right;
+}
+
+.flex-box{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0px 0px 0px 10px;
+    width: 350px;
+    height: 150px;
+    background-color: rgba(128, 128, 128, 0.397);
+    font-size: 16px;
+    text-align: left;
+    line-height: 20px;
+    margin: 10px;
+}
+
+@media (min-width: 1200px) {
+    .flex-box{
+        width: 80%;
+    }
+    .box1{
+        width: 350px;
+    }
+    .box2{
+        width: 350px;
+    }
+    .box3{
+        width: 350px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .flex-box{
+        width: 50%;
+    }
+    .box1{
+        width: 175px;
+    }
+    .box2{
+        width: 175px;
+    }
+    .box3{
+        width: 175px;
+    }
+}
